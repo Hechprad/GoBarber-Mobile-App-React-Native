@@ -27,7 +27,7 @@ Possibilitar a gestão e disponibilização da agenda dos profissionais do salã
   yarn android
 ```
 
-Caso o Metro Bundler não inicie corretamente, abra outra aba do terminal e execute:
+🚨 Caso o Metro Bundler não inicie corretamente, abra outra aba do terminal e execute:
 
 ```shell
   yarn start
