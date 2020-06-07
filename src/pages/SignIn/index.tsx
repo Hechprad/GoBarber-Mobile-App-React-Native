@@ -10,6 +10,7 @@ const SignIn: React.FC = () => {
     <>
       <s.Container>
         <Image source={logoImg} />
+        <s.Title>Faça seu logon</s.Title>
       </s.Container>
     </>
   );
