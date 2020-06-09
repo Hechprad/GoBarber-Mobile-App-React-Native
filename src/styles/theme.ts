@@ -9,14 +9,21 @@ export const themeColors = {
   white2: '#f4ede8',
 };
 
+export const themeFonts = {
+  RobotoSlabRegular: 'RobotoSlab-Regular',
+  RobotoSlabMedium: 'RobotoSlab-Medium',
+};
+
 declare module 'styled-components' {
   export interface DefaultTheme {
     colors: { [key in keyof typeof themeColors]: string };
+    fonts: { [key in keyof typeof themeFonts]: string };
   }
 }
 
 const theme: DefaultTheme = {
   colors: themeColors,
+  fonts: themeFonts,
 };
 
 export default theme;

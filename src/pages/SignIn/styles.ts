@@ -12,7 +12,7 @@ export const Container = styled.View`
 export const Title = styled.Text`
   font-size: 24px;
   color: ${({ theme }) => theme.colors.white2};
-  font-family: 'RobotoSlab-Medium';
+  font-family: ${({ theme }) => theme.fonts.RobotoSlabMedium};
   margin: 64px 0 24px;
 `;
 
@@ -23,7 +23,7 @@ export const ForgotPassword = styled.TouchableOpacity`
 export const ForgotPasswordText = styled.Text`
   font-size: 16px;
   color: ${({ theme }) => theme.colors.white2};
-  font-family: 'RobotoSlab-Medium';
+  font-family: ${({ theme }) => theme.fonts.RobotoSlabMedium};
 `;
 export const CreateAccountButton = styled.TouchableOpacity`
   position: absolute;
@@ -42,7 +42,7 @@ export const CreateAccountButton = styled.TouchableOpacity`
 export const CreateAccountButtonText = styled.Text`
   font-size: 18px;
   color: ${({ theme }) => theme.colors.orange};
-  font-family: 'RobotoSlab-Medium';
+  font-family: ${({ theme }) => theme.fonts.RobotoSlabMedium};
   margin-left: 16px;
 `;
 

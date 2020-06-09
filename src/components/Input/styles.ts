@@ -17,7 +17,7 @@ export const TextInput = styled.TextInput`
   flex: 1;
   color: ${({ theme }) => theme.colors.white1};
   font-size: 16px;
-  font-family: 'RobotoSlab-Regular';
+  font-family: ${({ theme }) => theme.fonts.RobotoSlabRegular};
 `;
 
 export const Icon = styled(FeatherIcon).attrs((props) => ({
