@@ -1,5 +1,6 @@
 import React from 'react';
 import { View } from 'react-native';
+import { useNavigation } from '@react-navigation/native';
 
 import Input from '../../components/Input';
 import Button from '../../components/Button';
@@ -7,6 +8,8 @@ import Button from '../../components/Button';
 import * as s from './styles';
 
 const SignIn: React.FC = () => {
+  const navigation = useNavigation();
+
   return (
     <>
       <s.KeyboardAvoidingView>
@@ -36,7 +39,11 @@ const SignIn: React.FC = () => {
         </s.ScrollView>
       </s.KeyboardAvoidingView>
 
-      <s.CreateAccountButton onPress={() => {}}>
+      <s.CreateAccountButton
+        onPress={() => {
+          navigation.navigate('SignUp');
+        }}
+      >
         <s.Icon name="log-in" />
         <s.CreateAccountButtonText>Criar uma conta</s.CreateAccountButtonText>
       </s.CreateAccountButton>

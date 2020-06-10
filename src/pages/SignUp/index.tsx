@@ -1,5 +1,6 @@
 import React from 'react';
 import { View } from 'react-native';
+import { useNavigation } from '@react-navigation/native';
 
 import Input from '../../components/Input';
 import Button from '../../components/Button';
@@ -7,6 +8,8 @@ import Button from '../../components/Button';
 import * as s from './styles';
 
 const SignUp: React.FC = () => {
+  const navigation = useNavigation();
+
   return (
     <>
       <s.KeyboardAvoidingView>
@@ -33,7 +36,11 @@ const SignUp: React.FC = () => {
         </s.ScrollView>
       </s.KeyboardAvoidingView>
 
-      <s.BackToSignIn onPress={() => {}}>
+      <s.BackToSignIn
+        onPress={() => {
+          navigation.goBack();
+        }}
+      >
         <s.Icon name="arrow-left" />
         <s.BackToSignInText>Voltar para logon</s.BackToSignInText>
       </s.BackToSignIn>
