@@ -5,6 +5,7 @@ export const themeColors = {
   darkPurple: '#232129',
   gray1: '#666360',
   orange: '#ff9000',
+  red: '#C53030',
   white1: '#ffffff',
   white2: '#f4ede8',
 };
