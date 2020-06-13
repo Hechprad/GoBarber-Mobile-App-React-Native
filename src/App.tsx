@@ -7,7 +7,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import AppProvider from './hooks';
 
 import Routes from './routes';
-import theme from './styles/theme';
+import theme, { themeColors } from './styles/theme';
 
 const App: React.FC = () => (
   <NavigationContainer>
@@ -17,9 +17,7 @@ const App: React.FC = () => (
         backgroundColor={theme.colors.background}
       />
       <AppProvider>
-        <View
-          style={{ flex: 1, backgroundColor: `${theme.colors.background}` }}
-        >
+        <View style={{ flex: 1, backgroundColor: `${themeColors.background}` }}>
           <Routes />
         </View>
       </AppProvider>
